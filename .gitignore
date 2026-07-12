@@ -1,3 +1,8 @@
 *CHANGELOG.md
 
 *.pt
+
+# Experiment results and data
+test*/results/
+test*/extracted/
+test*/results.zip
