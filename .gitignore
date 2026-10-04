@@ -1,8 +1,98 @@
-*CHANGELOG.md
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Environments & secrets
+.env
+.env.*
+!.env.example
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large checkpoints and weights
+checkpoints/
+weights/
 *.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
 
-# Experiment results and data
-test*/results/
-test*/extracted/
-test*/results.zip
+# Intermediate and raw dataset files (keep only documentation and toy samples)
+data/*.csv
+!data/sample_molecules.csv
+data/raw/
+data/splits/
+data/processed/
+data/cache/
+
+# Experiment results and generated artifacts
+results/
+
+# Developer tooling
+.pre-commit-config.yaml
+
+# User changelog if untracked
+CHANGELOG.md
+

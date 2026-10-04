@@ -1,0 +1,6 @@
+name,smiles,label
+Aspirin,CC(=O)Oc1ccccc1C(=O)O,1
+Caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C,1
+Diazepam,CN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3,1
+Dopamine,C1=CC(=C(C=C1CCN)O)O,0
+Penicillin,CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C,0

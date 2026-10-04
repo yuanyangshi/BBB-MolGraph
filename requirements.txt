@@ -1,0 +1,31 @@
+# ==============================================================================
+# BBB-MolGraph: Production & Scientific Reproducibility Environment Specification
+# Python Version Compatibility: Python 3.8 - 3.13 (Validated on Python 3.13)
+# ==============================================================================
+
+# Core Deep Learning & Tensor Computation
+torch==2.13.0
+
+# Cheminformatics & Molecular Graph Featurization
+rdkit==2026.3.6
+
+# Scientific Computing & Machine Learning Baselines
+numpy==2.5.2
+scipy==1.18.0
+pandas==3.0.5
+scikit-learn==1.9.1
+
+# Chemical Language Modeling & Pretrained Transformers
+transformers==5.18.0
+
+# Publication-Grade Visualization & Plotting
+matplotlib==3.11.1
+seaborn==0.13.2
+
+# Configuration Management & Utilities
+pyyaml==6.0.3
+tqdm==4.70.0
+
+# Automated Testing & Verification Suite
+pytest==9.1.1
+pytest-cov==7.1.0

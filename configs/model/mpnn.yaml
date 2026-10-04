@@ -1,0 +1,10 @@
+# MPNN Model Configuration
+model:
+  type: "mpnn"
+  atomic_dim: 30
+  bond_dim: 11
+  hidden_dim: 64
+  propagation_steps: 4
+  readout_type: "attention"
+  num_heads: 8
+  dropout: 0.2

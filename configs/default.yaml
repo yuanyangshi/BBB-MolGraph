@@ -1,0 +1,25 @@
+# Global Default Configuration for BBB-MolGraph
+seed: 42
+device: null  # Auto-selects CUDA if available, else CPU
+
+data:
+  csv_path: "data/raw/BBBP_combined.csv"
+  smiles_column: "smiles"
+  target_column: "label"
+  name_column: "name"
+  include_chirality: true
+
+training:
+  batch_size: 32
+  max_epochs: 30
+  lr: 0.0005
+  weight_decay: 0.00001
+  grad_clip_norm: 5.0
+  use_amp: true
+  patience: 10
+  min_delta: 0.0001
+
+evaluation:
+  metric: "roc_auc"
+  n_bootstraps: 1000
+  ci: 0.95

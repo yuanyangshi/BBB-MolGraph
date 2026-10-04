@@ -1,0 +1,23 @@
+# Benchmark Baselines Configuration
+_base_: "../default.yaml"
+
+experiment_name: "benchmark_baselines"
+
+baselines:
+  - name: "RandomForest"
+    type: "rf"
+    n_estimators: 200
+  - name: "SupportVectorMachine"
+    type: "svm"
+    C: 1.0
+  - name: "LogisticRegression"
+    type: "logistic_regression"
+  - name: "GCN"
+    type: "gcn"
+    hidden_dim: 64
+  - name: "MPNN_Standalone"
+    type: "mpnn"
+    hidden_dim: 64
+  - name: "DualChannel_Full"
+    type: "dual_channel"
+    fusion_mode: "gated"

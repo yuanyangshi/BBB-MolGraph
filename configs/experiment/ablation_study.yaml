@@ -1,0 +1,24 @@
+# Ablation Study Configuration: Comparing Components
+_base_: "../default.yaml"
+
+experiment_name: "ablation_study"
+ablation_variants:
+  - name: "Full_DualChannel_Gated"
+    model_type: "dual_channel"
+    fusion_mode: "gated"
+  - name: "Concat_Fusion"
+    model_type: "dual_channel"
+    fusion_mode: "concat"
+  - name: "Graph_Branch_Only"
+    model_type: "mpnn"
+    readout_type: "attention"
+  - name: "Graph_Mean_Readout_Only"
+    model_type: "mpnn"
+    readout_type: "mean"
+  - name: "MolFormer_Sequence_Only"
+    model_type: "molformer"
+
+training:
+  batch_size: 32
+  max_epochs: 25
+  lr: 0.0005

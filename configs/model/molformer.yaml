@@ -1,0 +1,8 @@
+# MolFormer Sequence Model Configuration
+model:
+  type: "molformer"
+  model_name: "ibm-research/MoLFormer-XL-both-10pct"
+  out_dim: 64
+  freeze: true
+  dropout: 0.2
+  use_fallback: false

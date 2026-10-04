@@ -1,0 +1,22 @@
+# 5-Fold Stratified Scaffold Cross-Validation Experiment
+_base_: "../default.yaml"
+
+experiment_name: "scaffold_5fold_cv"
+cv_folds: 5
+split_method: "bemis_murcko"
+splits_path: "data/splits/scaffold_folds.json"
+
+model:
+  type: "dual_channel"
+  mpnn_hidden_dim: 64
+  propagation_steps: 4
+  molformer_out_dim: 64
+  fusion_mode: "gated"
+  fusion_dim: 128
+  dropout: 0.2
+
+training:
+  batch_size: 32
+  max_epochs: 35
+  lr: 0.0005
+  patience: 10

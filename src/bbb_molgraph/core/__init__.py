@@ -1,0 +1,27 @@
+"""
+Core foundational constants and registry mechanisms.
+"""
+
+from bbb_molgraph.core.constants import (
+    DEFAULT_MOLFORMER_MODEL_NAME,
+    DEFAULT_PERMITTED_ATOM_FEATURES,
+    DEFAULT_PERMITTED_BOND_FEATURES,
+    MOLFORMER_EMBEDDING_DIM,
+    PERMITTED_ATOM_SYMBOLS,
+    PERMITTED_BOND_TYPES,
+)
+from bbb_molgraph.core.registry import DATASETS, MODELS, OPTIMIZERS, SCHEDULERS, Registry
+
+__all__ = [
+    "DEFAULT_MOLFORMER_MODEL_NAME",
+    "DEFAULT_PERMITTED_ATOM_FEATURES",
+    "DEFAULT_PERMITTED_BOND_FEATURES",
+    "MOLFORMER_EMBEDDING_DIM",
+    "PERMITTED_ATOM_SYMBOLS",
+    "PERMITTED_BOND_TYPES",
+    "Registry",
+    "MODELS",
+    "DATASETS",
+    "OPTIMIZERS",
+    "SCHEDULERS",
+]

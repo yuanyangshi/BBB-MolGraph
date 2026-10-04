@@ -1,0 +1,14 @@
+# Dual-Channel Multimodal Fusion Model Configuration
+model:
+  type: "dual_channel"
+  atomic_dim: 30
+  bond_dim: 11
+  mpnn_hidden_dim: 64
+  propagation_steps: 4
+  molformer_model_name: "ibm-research/MoLFormer-XL-both-10pct"
+  molformer_out_dim: 64
+  freeze_molformer: true
+  use_fallback_molformer: false
+  fusion_mode: "gated"
+  fusion_dim: 128
+  dropout: 0.2
